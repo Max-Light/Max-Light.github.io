@@ -1,0 +1,79 @@
+main .projects
+{
+	width:80%;
+}
+
+main .projects .subtitle
+{
+	justify-content:center;
+	padding-bottom:5px;
+	text-transform:uppercase;
+	text-align:left-center;
+	font-size:35px;
+}
+
+main .projects .content
+{
+	margin:auto;
+	display:flex;
+	flex-wrap:wrap;
+	gap:75px;
+    justify-content:space-between;
+}
+
+main .projects .content .project-container
+{
+	border:5px solid;
+	border-radius:25px;
+	border-color:#F256FF;
+	flex-basis:500px;
+	box-sizing:border-box;
+}
+
+main .projects .content .project-container img
+{
+	width:247.5px;
+	height:247.5px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:5px;
+	object-fit:cover;
+	display:block;
+	background:green;
+}
+
+main .projects .content .project-container .project-title
+{
+	width:245px;
+	height:115px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+	padding-right:5px;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	overflow-wrap:break-word;
+	inline-size:245px;
+	hyphens:manual;
+	font-size:35px;
+	background:blue;
+}
+
+main .projects .content .project-container .project-desc
+{
+	width:245px;
+	height:115px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:0px;
+	padding-right:5px;
+	display:table-cell;
+	text-align:center;
+	vertical-align:top;
+	overflow-wrap:hidden;
+	inline-size:245px;
+	hyphens:manual;
+	background:red;
+}

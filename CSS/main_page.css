@@ -12,9 +12,12 @@ header .external-links
 {
 	margin:auto;
 	width:80%;
-	text-align:center;
+	justify-content:center;
 	padding-top:5px;
 	padding-bottom:10px;
+	display:flex;
+	flex-direction:row;
+	gap:20px;
 }
 
 header .external-links a:link
@@ -43,26 +46,31 @@ header .external-links a:active
 
 header .external-links .link-container
 {
-	display:inline-flex;
+	display:flex;
 	flex-direction:row;
 	align-items:center;
 	justify-content:center;
-	padding-left:10px;
-	padding-right:10px;
 }
 
 header .external-links .link-container .icon-image
 {
-	align-items:center;
-	justify-content:center;
+	align-items:start;
+	justify-content:start;
+	object-fit: fill;
+}
+
+header .external-links .link-container .icon-image img
+{
+	width:30px;
+	height:30px;
 }
 
 header .external-links .link-container .icon-text
 {
 	align-items:center;
-	justify-content:center;
-	font-size:20px;
+	justify-content:start;
 	padding-left:5px;
+	font-size:20px;
 }
 
 main .about-me
@@ -74,14 +82,22 @@ main .about-me
 
 main .about-me .subtitle
 {
-	text-transform:uppercase;
-	text-align:center;
 	justify-content:center;
 	padding-bottom:5px;
+	text-transform:uppercase;
+	text-align:center;
+	font-size:35px;
 }
 
 main .about-me .content
 {
 	text-align:center-left;
 	font-size:18px;
+}
+
+main .projects
+{
+	margin:auto;
+	padding-top:25px;
+	width:80%;
 }
