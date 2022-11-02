@@ -48,29 +48,27 @@ header .external-links .link-container
 {
 	display:flex;
 	flex-direction:row;
+	flex-wrap:nowrap;
 	align-items:center;
 	justify-content:center;
 }
 
-header .external-links .link-container .icon-image
+header .external-links .link-container img
 {
-	align-items:start;
-	justify-content:start;
-	object-fit: fill;
-}
-
-header .external-links .link-container .icon-image img
-{
+	object-fit:fill;
 	width:30px;
 	height:30px;
 }
 
-header .external-links .link-container .icon-text
+header .external-links .link-container p
 {
-	align-items:center;
-	justify-content:start;
 	padding-left:5px;
 	font-size:20px;
+}
+
+header .external-links .link-container .icon-text
+{
+	
 }
 
 main .about-me
