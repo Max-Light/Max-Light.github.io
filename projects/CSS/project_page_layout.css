@@ -1,0 +1,149 @@
+header h1
+{
+	width:100%;
+	padding-top:25px;
+	padding-bottom:50px;
+	
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	
+	text-align:center;
+	text-transform:uppercase;
+	font-size:70px;
+	text-shadow:2px 2px 4px #000000;
+}
+
+header .back-to-main
+{
+	position:relative;
+	left:-10px;
+	overflow:hidden;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:start;
+}
+
+header .back-to-main a:link
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+header .back-to-main a:visited
+{
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+header .back-to-main a:hover
+{
+	text-decoration:none;
+	color:#8C8C8C;
+}
+
+header .back-to-main a:active
+{
+	text-decoration:none;
+	color:#575757;
+}
+
+header .back-to-main .link-container
+{
+	padding-left:30px;
+	padding-right:50px;
+	
+	border:2.5px solid;
+	border-color:#000000;
+	border-radius:0px 25px 25px 0px;
+	background:#1C1B24;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:start;
+	align-content:start;
+	align-items:center;
+	gap:10px;
+}
+
+header .back-to-main .link-container img
+{
+	width:50px;
+	height:50px;
+	transform:rotate(270deg);
+	object-fit:fill;
+}
+
+header .back-to-main .link-container p
+{
+	font-size:30px;
+}
+
+body .left-content-section
+{
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-right:15%;
+}
+
+body .left-content-section h2
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:10%;
+	
+	text-align:end;
+	font-size:50px;
+}
+
+body .left-content-section .content
+{
+	position:relative;
+	padding-left:50px;
+	padding-right:50px;
+	
+	border-radius:5px 25px 25px 5px;
+	background:#1C1B24;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:start;
+}
+
+body .right-content-section
+{
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:15%;
+}
+
+body .right-content-section h2
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:10%;
+	margin-right:0px;
+	
+	font-size:50px;
+}
+
+
+body .right-content-section .content
+{
+	position:relative;
+	padding-left:50px;
+	padding-right:50px;
+	
+	border-radius:25px 5px 5px 25px;
+	background:#1C1B24;
+	
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content:start;
+}

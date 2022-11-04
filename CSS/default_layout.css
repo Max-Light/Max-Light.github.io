@@ -1,0 +1,23 @@
+body
+{
+	background:#24232E;
+	font-family:"Ubuntu";
+	color:#FFFFFF;
+}
+
+::-webkit-scrollbar {
+  width:15px;
+}
+
+::-webkit-scrollbar-track {
+  background:#1C1B24; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background:#5A5773; 
+  border-radius:5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#3A384A; 
+}

@@ -1,35 +1,41 @@
-header .title
+header h1
 {
+	width:100%;
+	padding-top:100px;
+	padding-bottom:50px;
+	
+	dispplay:flex;
+	align-items:center;
 	justify-content:center;
-	padding-top:5px;
-	padding-bottom:5px;
+	
 	text-align:center;
 	text-transform:uppercase;
-	font-size:50px;
+	font-size:100px;
+	text-shadow:2px 2px 4px #000000;
 }
 
 header .external-links
 {
-	margin:auto;
-	width:80%;
-	justify-content:center;
-	padding-top:5px;
-	padding-bottom:10px;
+	width:100%;
+	padding-top:0px;
+	padding-bottom:50px;
+	
 	display:flex;
 	flex-direction:row;
+	justify-content:center;
 	gap:20px;
 }
 
 header .external-links a:link
 {
 	text-decoration:none;
-	color:#5C5C5C;
+	color:#FFFFFF;
 }
 
 header .external-links a:visited
 {
 	text-decoration:none;
-	color:#5C5C5C;
+	color:#FFFFFF;
 }
 
 header .external-links a:hover
@@ -41,7 +47,7 @@ header .external-links a:hover
 header .external-links a:active
 {
 	text-decoration:none;
-	color:#FFFFFF;
+	color:#575757;
 }
 
 header .external-links .link-container
@@ -66,38 +72,38 @@ header .external-links .link-container p
 	font-size:20px;
 }
 
-header .external-links .link-container .icon-text
-{
-	
-}
-
 main .about-me
 {
-	margin:auto;
-	padding-top:25px;
-	width:80%;
+	width:100%;
 }
 
-main .about-me .subtitle
+main .about-me h2
 {
+	margin-top:50px;
+	margin-bottom:50px;
+	padding-top:25px;
+	padding-bottom:25px;
+	
+	display:flex;
 	justify-content:center;
-	padding-bottom:5px;
+	align-items:center;
+	
 	text-transform:uppercase;
-	text-align:center;
 	font-size:35px;
+	text-shadow:2px 2px 4px #000000;
+	
+	background:#1C1B24;
+	border-radius:5px;
 }
 
 main .about-me .content
 {
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	
 	text-align:center-left;
 	font-size:18px;
-}
-
-main .projects
-{
-	margin:auto;
-	padding-top:25px;
-	width:80%;
 }
 
 footer

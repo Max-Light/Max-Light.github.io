@@ -1,23 +1,39 @@
 main .projects
 {
-	width:80%;
+	width:100%
 }
 
-main .projects .subtitle
+main .projects h2
 {
-	justify-content:center;
-	padding-bottom:5px;
+	margin-top:50px;
+	margin-bottom:50px;
+	padding-top:25px;
+	padding-bottom:25px;
+	padding-left:10%;
+	
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content:start;
+	align-items:start;
 	text-transform:uppercase;
-	text-align:left-center;
+	
+	text-align:left;
 	font-size:35px;
+	text-shadow:2px 2px 4px #000000;
+	
+	background:#1C1B24;
+	border-radius:5px;
 }
 
 main .projects .content
 {
-	margin:auto;
+	margin-left:10%;
+	margin-left:10%;
+	width:80%;
+	
 	display:flex;
 	flex-wrap:wrap;
-	gap:75px;
+	gap:100px;
     justify-content:space-evenly;
 	align-content:start;
 	align-items:start;
@@ -29,7 +45,17 @@ main .projects .content .project-container
 	border-radius:25px;
 	border-color:#000000;
 	
-	box-shadow:5px 5px 5px 10px #B5B5B5;
+	box-shadow:
+		0 0 0px 0px #FFFFFF,
+		0 0 10px 2px #969696,
+		0 0 15px 5px #696875;
+}
+
+main .projects .content .project-container:hover
+{
+	animation-name:border-glow;
+	animation-duration:0.7s;
+	animation-fill-mode:forwards;
 }
 
 main .projects .content .project-container .cover table
@@ -62,13 +88,14 @@ main .projects .content .project-container .cover img
 	justify-content:center;
 }
 
-main .projects .content .project-container .cover .project-title
+main .projects .content .project-container .cover h3
 {
 	width:240px;
 	height:80.5px;
 	margin:5px;
 	
 	font-size:35px;
+	font-weight:normal;
 	text-align:center;
 	word-break:break-word;
 	inline-size:225px;
@@ -107,6 +134,7 @@ main .projects .content .project-container .cover .tag-container .tag
 	text-align:center;
 	white-space:nowrap;
 	overflow:hidden;
+	color:#000000;
 	
 	border:1px solid;
 	border-radius:5px;
@@ -133,13 +161,13 @@ main .projects .content .project-container .project-details
 
 main .projects .content .project-container:hover .project-details
 {
-	height:165px;
+	height:175px;
 }
 
 main .projects .content .project-container .project-details .text
 {
 	height:100px;
-	margin-top:5px;
+	margin-top:15px;
 	margin-bottom:5px;
 	font-size:18px;
 	line-height:20px;
@@ -165,13 +193,14 @@ main .projects .content .project-container .project-details a
 
 main .projects .content .project-container .project-details a:link
 {
-	color:#5C5C5C;
+	text-decoration:none;
+	color:#FFFFFF;
 }
 
 main .projects .content .project-container .project-details a:visited
 {
 	text-decoration:none;
-	color:#5C5C5C;
+	color:#FFFFFF;
 }
 
 main .projects .content .project-container .project-details a:hover
@@ -183,7 +212,7 @@ main .projects .content .project-container .project-details a:hover
 main .projects .content .project-container .project-details a:active
 {
 	text-decoration:none;
-	color:#FFFFFF;
+	color:#575757;
 }
 
 main .projects .content .project-container .project-details .link-container
@@ -197,7 +226,7 @@ main .projects .content .project-container .project-details .link-container
 	
 	border:2px solid;
 	border-radius:25px;
-	border-color:#000000;
+	border-color:#FFFFFF;
 	
 	display:none;
 }
@@ -233,6 +262,24 @@ main .projects .content .project-container .project-details .link-container p
 	font-size:25px;
 	white-space:nowrap;
 	overflow:hidden;
+}
+
+@keyframes border-glow
+{
+	from
+	{
+		box-shadow:
+		0 0 0px 0px #FFFFFF,
+		0 0 10px 2px #969696,
+		0 0 15px 5px #696875;
+	}
+	to
+	{
+		box-shadow:
+		0 0 5px 0.5px #FFFFFF,
+		0 0 20px 5px #969696,
+		0 0 35px 10px #696875;
+	}
 }
 
 @keyframes fade-in-slide-right
