@@ -114,7 +114,6 @@ body .left-content-section .content
 	
 	display:flex;
 	flex-direction:column;
-	flex-wrap:nowrap;
 	justify-content:start;
 	
 	font-size:18px;
@@ -160,7 +159,6 @@ body .right-content-section .content
 	
 	display:flex;
 	flex-direction:column;
-	flex-wrap:nowrap;
 	justify-content:start;
 	
 	font-size:18px;
