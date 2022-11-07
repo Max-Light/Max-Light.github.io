@@ -166,10 +166,14 @@ body .right-content-section .content
 
 body .right-content-section .content img
 {
+	width:80%;
+	
 	padding-top:10px;
 	padding-bottom:10px;
 	padding-left:10%;
 	padding-right:10%;
+	
+	object-fit:fill;
 }
 
 body .content a:link
