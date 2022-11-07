@@ -13,9 +13,9 @@
 	<body>
 		<header>
 			<div class="back-to-main">
-				<a href="../index.html">
+				<a href="/index.html">
 					<div class="link-container">
-						<img src="../images/double_arrow.png" alt="back">
+						<img src="/images/double_arrow.png" alt="back">
 						<p>Back to Main</p>
 					</div>
 				</a>
@@ -40,7 +40,7 @@
 					<p>
 					Unity provides their own navigation mesh system that can be easily implemented and generated. The system also comes with its own algorithm to solve the quickest and shortest path along the mesh surface. However, Unity does not provide an in-depth behavior for its entity navigation while traversing the path.  In this stage of the development, I had created my own entity navigation behavior specifically for the game’s troop contingent units. The troop contingent navigation behavior separates steering and acceleration to give a more realistic movement simulation, as if a group of troop units were moving in formation. There are additional functions for the purpose of orienting and directing where troop contingents are facing as well.
 					</p>
-					<img src="../images/regicide/entitynavigation.png" alt="image">
+					<img src="/images/regicide/entitynavigation.png" alt="image">
 				</div>
 			</div>
 			<div class="left-content-section">
@@ -49,7 +49,7 @@
 					<p>
 					Most command and conquer games, a variation of RTS games, feature a flexible camera control system for players to navigate and view the game world.  A “camera” in game development is an object in the Unity engine and a term to describe what the player will view or see on the screen.  My implementation of the player camera control system enables the movement behavior, triggered by the player, and adds a restrictive boundary to confine itself within the game world. In addition, the camera controller integrates Unity’s Cinemachine Camera plugin, of which is a powerful tool that provides additional effects such as damping and adds another layer of organization for multiple cameras.
 					</p>
-					<img src="../images/regicide/playercamera.png" alt="image">
+					<img src="/images/regicide/playercamera.png" alt="image">
 					<p>
 					The camera controller has several actions, including positional, zooming, rotating, and tilting movements. The camera can be positionally moved by dragging across the world terrain or by using basic directional key binds. Zooming is triggered via the mouse wheel, of which automatically calculates the tilt of the camera based on the camera height relative to the terrain. Lastly, rotating the camera is triggered by using two key binds for clockwise and counter-clockwise directions.
 					</p>
@@ -61,11 +61,11 @@
 					<p>
 					The battle formation system is perhaps the most complicated system within the game. This system introduces the concept of splining and its result to provide full control and flexibility for players to shape their own battle formations.  To explain what splining is; it is a collection of Bezier curves to create one long connected complex curve. A Bezier curve is a type of algorithm to represent curve shapes, of which is an incredibly useful computational tool to display dynamic curves that cannot be constantly expressed in a formal formula expression. The curve is calculated by starting and ending at certain positional points and its curve intensity is calculated by two anchors within the curve segment.
 					</p>
-					<img src="../images/regicide/quadlinspline.png" alt="image">
+					<img src="/images/regicide/quadlinspline.png" alt="image">
 					<p>
 					There are several custom add-on behaviors and restrictions on the spline that define it accordingly to the intended behavior of the battle formation system.  The add on behaviors are termed as curve compression, curve reflection, anchor maintenance, anchor restriction, anchor angular restriction, and curve angular restriction. Curve compression involves compressing the curve so that when the curve’s arc length increases it will recalculate itself and maintain the same total curve length. Curve reflection occurs when a control point located in the middle of the spline is moved and its adjacent curves reflect each other with the same angular displacement. Anchor maintenance allows anchor points to maintain the same angular displacement whenever a positional control point is moved. This allows the curve segment to have the same curve shape no matter where the end points are placed. There are three modes in anchor restriction, linear, quadratic, and cubic that define the restriction for the curve shape. In anchor and curve angular restriction, the control points are positionally restricted in an angular circular range.
 					</p>
-					<img src="../images/regicide/cubicspline.png" alt="image">
+					<img src="/images/regicide/cubicspline.png" alt="image">
 					<p>
 					The battle formation is currently a singular line formation that stretches gathered formation units along the spline curve. Each available slot on the spline are directly adjacent with one another and can be occupied by game units. Additionally, the formation system consequently enables the game mechanic for grouping and categorizing contingent units. The grouping mechanic will feature its own control system for movement and action, which acts as a single trigger across all contingent units. The spline control points are identified by an asset model and can be positioned by dragging them across the terrain in order to reshape the battle formation.
 					</p>
@@ -80,7 +80,7 @@
 					<p>
 					The purpose of having a procedural mesh on the battle line formation is to add another layer of interaction and physics collision. This is currently used to separate the interaction layer, so that there is no conflict between other interactable systems and the formation system. As a requirement, the battle line formation mesh requires a fast and effective method to setup all vertices and geometric triangles along the spline curve. 
 					</p>
-					<img src="../images/regicide/procmeshspline.png" alt="image">
+					<img src="/images/regicide/procmeshspline.png" alt="image">
 				</div>
 			</div>
 			<div class="right-content-section">
